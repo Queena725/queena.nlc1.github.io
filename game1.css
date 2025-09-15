@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+  margin:0;
+  font-family:'Press Start 2P', cursive;
+  background: linear-gradient(to bottom, #9bd3ff, #cfe9ff);
+  height:100vh;
+  overflow:hidden;
+}
+
+/* 픽셀 버튼 */
+.pixel-btn{
+  background:#ffcb05;
+  border:3px solid #222;
+  padding:6px 10px;
+  font-size:10px;
+  cursor:pointer;
+  font-family:'Press Start 2P', cursive;
+  box-shadow:3px 3px 0 #222;
+}
+.pixel-btn:active{
+  transform:translate(2px,2px);
+  box-shadow:1px 1px 0 #222;
+}
+
+/* 윈도우 */
+.window{
+  background:#fff;
+  border:4px solid #222;
+  width:320px;
+  min-width:200px;
+  min-height:120px;
+  box-shadow:6px 6px 0 #000;
+  position:absolute;
+  top:50px;
+  left:50px;
+  z-index:20;
+  display:none;
+  overflow:hidden;
+  resize:both;
+}
+
+.window-header{
+  background:#7B93C8;
+  padding:6px;
+  cursor:move;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:4px solid #222;
+}
+
+.window-body{ padding:10px; text-align:center; }
+
+.control-buttons{
+  position:fixed;
+  bottom:20px;
+  display:flex;
+  gap:10px;
+  right:20px;
+  z-index:30;
+}
+
+.resize-handle{
+  width:10px;
+  height:10px;
+  background:#222;
+  position:absolute;
+  right:0;
+  bottom:0;
+  cursor:se-resize;
+}
+
+/* 배경 요소 */
+.sky-object{
+  position:absolute;
+  width:100px;
+  height:100px;
+  pointer-events:none; /* 클릭 방해 안 함 */
+  image-rendering: pixelated;
+}
+
+/* 구름 */
+.cloud{
+  background: url('img/cloud.png') no-repeat center/contain;
+  opacity:0.8;
+}
+
+/* 새 */
+.bird{
+  background: url('img/love.png') no-repeat center/contain;
+  width:30px;
+  height:30px;
+}
+

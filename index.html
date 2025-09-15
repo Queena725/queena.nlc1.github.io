@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel OX Quiz + Profile</title>
+<link rel="stylesheet" href="game1.css">
+</head>
+<body>
+
+<!-- 컨트롤 버튼 -->
+<div class="control-buttons">
+  <button class="pixel-btn" id="openQuizBtn">Open Quiz</button>
+  <button class="pixel-btn" id="restartBtn">Restart</button>
+  <button class="pixel-btn" id="openProfileBtn">Open Profile</button>
+</div>
+
+<!-- 퀴즈 창 -->
+<div class="window" id="quizWindow">
+  <div class="window-header">
+    <span>OX Quiz</span>
+    <button class="pixel-btn close-btn" id="closeQuizBtn">X</button>
+  </div>
+  <div class="window-body">
+    <img id="questionImage" src="img/matcha f.png" alt="Question Image" width="120">
+    <p id="questionText">퀴즈를 시작하려면 Open Quiz를 누르세요</p>
+    <div class="button-container">
+      <button class="pixel-btn" id="btnO">O</button>
+      <button class="pixel-btn" id="btnX">X</button>
+    </div>
+  </div>
+  <div class="resize-handle"></div>
+</div>
+
+<!-- 프로필 창 -->
+<div class="window" id="profileWindow">
+  <div class="window-header">Profile
+    <button class="pixel-btn close-btn" id="closeProfileBtn">X</button>
+  </div>
+  <div class="window-body">
+    <img id="profileImg" src="img/me.PNG" alt="Profile" width="120">
+  </div>
+  <div class="resize-handle"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
